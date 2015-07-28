@@ -1,0 +1,22 @@
+{
+  "fekit_extension_command_name": "ginstall",
+  "name": "fekit-extension-ginstall",
+  "version": "0.1.0",
+  "description": "通过git安装fekit module",
+  "dependencies": {
+    "cpr": "0.4.1",
+    "ignore": "2.2.15"
+  },
+  "main": "index.js",
+  "bin": "index.js",
+  "scripts": {
+    "postinstall": "node ./scripts/postinstall.js",
+    "preuninstall": "node ./scripts/preuninstall.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:EdwonLim/fekit-extension-ginstall.git"
+  },
+  "author": "Edwon.Lim <edwon.lim@gmail.com>",
+  "license": "BSD"
+}
